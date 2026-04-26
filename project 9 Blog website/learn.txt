@@ -1,0 +1,26 @@
+make the learn page like at top there is a header as same as main page header 
+and then in herosection background img and on img there is a text 
+A headline like “Discover the World with GlideAway”.
+
+A short tagline: “Your ultimate guide to hidden gems, adventures, and unforgettable journeys.”
+after this section 1 appears :
+right this in middle of section 1
+About GlideAway
+
+Explain why you started the blog.
+
+Example:
+
+“GlideAway began with a simple dream: to inspire travelers to go beyond the ordinary. From serene beaches to bustling city streets, we bring you authentic experiences, stories, and tips to make your travels unforgettable.”
+
+then below this write this in one line like points with pics
+
+then make parallex img effect at background after this make section :
+Featured Destinations / Blog Categories
+
+Show 3–6 cards with images of Maldives, Turkey, Switzerland, etc.
+
+Each card links to a category/destination page.
+then at the end write this 
+
+i make a seperate html file for the learn page and seperate css fie for css of learn page

@@ -1,0 +1,252 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+  font-size: 16px;
+  color: #333;
+}
+
+header {
+  position: fixed;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  background: linear-gradient(135deg, #3b90a0, #5598d5);
+  border-radius: 999px;
+  max-width: 1000px;
+  width: 90%;
+  z-index: 10;
+  padding: 2px 30px;
+
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+}
+header:hover {
+  transform: translateX(-50%) scale(1.02);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+header nav ul {
+  display: flex;
+  gap: 35px;
+  align-items: center;
+  list-style: none;
+}
+
+.navigation-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 2px 40px;
+  align-items: center;
+  margin: 0 auto;
+  width: 100%;
+}
+a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+a:hover {
+  color: #ffdd57;
+}
+header nav ul li {
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 2px;
+}
+nav ul li i {
+  font-size: 1.2rem;
+  color: white;
+}
+header nav ul li i:hover {
+  color: #ffdd57;
+  transform: scale(1.2);
+}
+.logo img {
+  width: 180px;
+  height: auto;
+}
+nav ul li:hover {
+  border-bottom: rgb(255, 251, 0) 2px solid;
+}
+
+/* Hero Section */
+.post-hero {
+  background: url("images/pic8.jpg") no-repeat center/cover;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  position: relative;
+  text-align: center;
+}
+.post-hero .hero-overlay {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(50, 48, 48, 0.2);
+  z-index: 1;
+}
+.post-hero h1,
+.post-hero p {
+  position: relative;
+  z-index: 2;
+}
+.post-hero h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.post-hero p {
+  font-size: 1rem;
+}
+
+/* Blog Content */
+.post-content {
+  max-width: 900px;
+  margin: 80px auto;
+  padding: 0 20px;
+}
+.post-content h2 {
+  color: #336ca0;
+  margin: 20px 0;
+}
+.post-content p {
+  margin-bottom: 20px;
+  text-align: justify;
+}
+.blog-images {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin: 30px 0;
+}
+
+.blog-images img {
+  width: 48%;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+.blog-images img:hover {
+  transform: scale(1.05);
+  filter: brightness(1.1);
+}
+.post-content ul {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+.back-btn {
+  text-align: center;
+  margin-top: 25px;
+}
+.read-btn {
+  padding: 8px 20px;
+  border: 2px solid #4f90cd;
+  background: transparent;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #4f90cd;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.read-btn:hover {
+  background-color: #4f90cd;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+/* Footer */
+.footer-lower {
+  background-color: #4f90cd;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+}
+.footer-lower p {
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  margin-left: 50px;
+}
+.social-icons {
+  margin-right: 50px;
+}
+.social-icons a i {
+  color: rgb(255, 255, 255);
+  padding: 0 10px;
+
+  font-size: 18px;
+}
+.social-icons a i:hover {
+  color: #ffdd57;
+  text-decoration: underline;
+}
+
+.blog-content {
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: auto;
+  line-height: 1.7;
+  font-size: 1.5rem;
+  color: #333;
+  font-family: "Poppins", sans-serif;
+}
+
+.blog-content h1 {
+  font-size: 3rem;
+  color: #336ca0;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.blog-images {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin: 30px 0;
+}
+
+.blog-images img {
+  width: 48%;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+.blog-images img:hover {
+  transform: scale(1.05);
+  filter: brightness(1.1);
+}
+
+.blog-images-single {
+  margin: 30px 0;
+  text-align: center;
+}
+
+.blog-images-single img {
+  width: 100%;
+  max-height: 450px;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s ease-in-out;
+}
+
+.blog-images-single img:hover {
+  transform: scale(1.02);
+}
