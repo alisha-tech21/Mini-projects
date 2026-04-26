@@ -1,0 +1,130 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "lato", sans-serif;
+  color: #666;
+  line-height: 1.8em;
+}
+.pimg1 {
+  background-image: url("imgs/voilet\ beach.jpg");
+  min-height: 100%;
+}
+.pimg2 {
+  background-image: url("imgs/california\ bridge.jpg");
+  min-height: 400px;
+}
+.pimg3 {
+  background-image: url("imgs/beach.jpg");
+  min-height: 400px;
+}
+.pimg1,
+.pimg2,
+.pimg3 {
+  position: relative;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.ptext {
+  position: absolute;
+  top: 50%;
+  text-align: center;
+  width: 100%;
+  color: white;
+  font-size: 27px;
+  letter-spacing: 8px;
+  transition: all ease 0.3s;
+}
+.ptext:hover {
+  transform: scale(0.92);
+}
+.textbg {
+  background-color: rgb(56, 18, 92);
+  border-radius: 6px;
+  padding: 16px;
+  transition: 0.5s;
+}
+
+.textbg:hover::before {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px #efff10;
+}
+.textbg:hover {
+  color: #f9f4f9;
+  box-shadow: 0 0 20px #fbfb0b;
+  text-shadow: 0 0 5px #ff12c4;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.section {
+  text-align: center;
+  padding: 50px 80px;
+}
+.section-light {
+  background-color: #f4f4f4;
+  color: rgb(55, 11, 97);
+}
+h2 {
+  font-weight: 910;
+  font-size: 28px;
+  color: rgb(79, 27, 128);
+}
+.section-dark {
+  background-color: rgb(55, 11, 97);
+  color: #fff;
+}
+.section-dark h2 {
+  font-weight: bold;
+  font-size: 28px;
+  color: rgb(254, 254, 254);
+}
+@media all and (max-width: 768px) {
+  .pimg1,
+  .pimg2,
+  .pimg3 {
+    background-attachment: fixed; /* Turn off fixed background for mobile */
+    background-position: center;
+    background-size: cover;
+  }
+
+  .ptext {
+    font-size: 20px;
+    letter-spacing: 4px;
+    padding: 0 10px;
+  }
+
+  .textbg {
+    padding: 16px;
+  }
+
+  .section {
+    padding: 30px 50px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+}
+
+@media all and (max-width: 480px) {
+  .ptext {
+    font-size: 14px;
+    letter-spacing: 2px;
+  }
+
+  .textbg {
+    padding: 10px;
+  }
+
+  .section {
+    padding: 20px 15px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+}
